@@ -1,0 +1,44 @@
+* React js is declarative, efficient and flexible javascript library for building reusable UI Components.
+* It is a javascript library for building user Interfaces.
+* It is about building javascript driven apps.
+* React apps run in the browser. They don't run on the server.
+* It solves the prblm of having to build complex user interfaces with what HTML and Javascript gives us
+  by writing maintainable, manageable and reusable pieces of that code which we can throw into our webapp
+  wherever we need to use it.
+
+* In order to get started, we should import two react libraries namely react.js and react-dom.js .
+* In react the reusable components are returned from the javascript functions.
+* The react-dom.js library actually exposes an object called ReactDOM which contains a method called
+  render().
+* The rener() method allows us to render a javascript function as a component to the real DOM.
+Ex:
+==============================================================================
+=====JS======:
+function Person(props) {
+  return (
+    <div className="person">
+      <h1>{props.name}</h1>
+      <p>Your age: {props.age}</p>
+    </div>
+  );
+}
+
+var app = (
+  <div>
+    <Person name="Ramakrishna" age="25" />
+    <Person name="Krishna" age="26" />
+  </div>
+);
+ReactDOM.render(app, document.querySelector('#app'));
+
+======HTML======:
+<div id="app"></div>
+================================================================================
+
+WHY React:
+* UI state becomes difficult to handle with Vanilla javascript in bigger web apps.
+* It helps us to focus on business logic, not on preventing our app from exploding.
+* React is maintained by a very big community.
+* Huge ecosystem, active community and high performance.
+* React Alternatives:
+    Angular, Vue, Jquery(mostly for traversing the DOM and targeting elements in the DOM).
